@@ -1,0 +1,334 @@
+/* Campaigns Page Specific Styles */
+.campaigns-container {
+  padding: 2rem;
+}
+
+/* Header Styles */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new-campaign-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.new-campaign-btn:hover {
+  background: var(--primary-color-dark);
+}
+
+.new-campaign-btn i {
+  font-size: 0.875rem;
+}
+
+/* View Toggle */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.view-btn {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+
+.view-btn:hover {
+  background: var(--hover-color);
+}
+
+.view-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Campaign Grid */
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Campaign Card */
+.campaign-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.campaign-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.campaign-status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: rgba(var(--success-rgb), 0.1);
+  color: var(--success-color);
+}
+
+.status-badge.scheduled {
+  background: rgba(var(--warning-rgb), 0.1);
+  color: var(--warning-color);
+}
+
+.status-badge.draft {
+  background: rgba(var(--info-rgb), 0.1);
+  color: var(--info-color);
+}
+
+.status-badge.completed {
+  background: rgba(var(--muted-rgb), 0.1);
+  color: var(--muted-color);
+}
+
+.campaign-date {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.campaign-actions {
+  position: relative;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background: var(--hover-color);
+  color: var(--text-color);
+}
+
+.campaign-body {
+  margin-bottom: 1.5rem;
+}
+
+.campaign-body h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.campaign-body p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Campaign Metrics */
+.campaign-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Campaign Setup */
+.campaign-setup {
+  padding: 1rem 0;
+}
+
+.setup-progress {
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--hover-color);
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.setup-progress span {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.complete-setup-btn,
+.continue-setup-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.complete-setup-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.complete-setup-btn:hover {
+  background: var(--primary-color-dark);
+}
+
+.continue-setup-btn {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.continue-setup-btn:hover {
+  background: var(--hover-color);
+}
+
+/* Campaign Footer */
+.campaign-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.reward-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.reward-info i {
+  color: var(--warning-color);
+}
+
+.view-details-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-details-btn:hover {
+  background: var(--hover-color);
+  border-color: var(--text-muted);
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .campaign-card {
+  background: var(--surface-color-dark);
+  border-color: var(--border-color-dark);
+}
+
+[data-theme="dark"] .campaign-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .view-btn {
+  background: var(--surface-color-dark);
+  border-color: var(--border-color-dark);
+}
+
+[data-theme="dark"] .view-btn:hover {
+  background: var(--hover-color-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .campaign-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .campaign-metrics {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .campaign-footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .view-details-btn {
+    width: 100%;
+  }
+} 

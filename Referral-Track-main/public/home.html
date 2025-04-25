@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReferralTrack - AI-Powered Referral Platform</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>ReferralTrack</span>
+      </div>
+      
+      <div class="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#" class="nav-link" id="ai-chat-trigger">AI Assistant</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      
+      <button class="mobile-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>AI-Powered Referral Platform for Growing Brands</h1>
+          <p>Empower your existing customer base to spread the word, while our smart AI assistant guides you through creating and managing referral campaigns that actually convert.</p>
+          
+          <div class="hero-buttons">
+            <a href="dashboard.html" class="btn btn-primary btn-lg">
+              <span>GET STARTED</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#demo" class="btn btn-outline btn-lg">
+              <span>Watch Demo</span>
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">5x</div>
+              <div class="stat-label">Higher Conversion</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2.3x</div>
+              <div class="stat-label">Customer Retention</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">AI Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AI Dashboard Interface">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Trusted Brands Section -->
+  <section class="trusted-brands">
+    <div class="container">
+      <h2>Trusted by Leading Global Brands</h2>
+      <div class="brands-container">
+        <div class="brand-logo">
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=Stripe" alt="Stripe">
+        </div>
+        <div class="brand-logo">
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=Google" alt="Google">
+        </div>
+        <div class="brand-logo">
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=Samsung" alt="Samsung">
+        </div>
+        <div class="brand-logo">
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=Visa" alt="Visa">
+        </div>
+        <div class="brand-logo">
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=Spotify" alt="Spotify">
+        </div>
+        <div class="brand-logo">
+          <img src="https://via.placeholder.com/120x40/ffffff/000000?text=LinkedIn" alt="LinkedIn">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Value Proposition Section -->
+  <section class="value-proposition">
+    <div class="container">
+      <h2>Built for Brands That Want Simplicity, Loyalty, and Results</h2>
+      <p>Our platform combines powerful analytics with intuitive design to help you create referral campaigns that drive growth.</p>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Powerful Features</h2>
+        <p>Everything you need to grow your business through referrals</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon bg-primary">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>AI Campaign Assistant</h3>
+          <p>Let our AI help you design and optimize referral campaigns based on your industry and goals.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon bg-success">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3>Performance Analytics</h3>
+          <p>Track campaign performance with real-time data and actionable insights.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon bg-info">
+            <i class="fa-solid fa-user-friends"></i>
+          </div>
+          <h3>Referral Tracking</h3>
+          <p>Monitor referrals and automatically reward customers for successful conversions.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon bg-warning">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+          <h3>Easy Integration</h3>
+          <p>Seamlessly integrate with your existing tools and platforms with just a few clicks.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon bg-danger">
+            <i class="fa-solid fa-shield-alt"></i>
+          </div>
+          <h3>Fraud Protection</h3>
+          <p>Our AI system automatically detects and prevents fraudulent referrals.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon bg-primary">
+            <i class="fa-solid fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Optimized</h3>
+          <p>Create beautiful referral experiences on any device with our responsive design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About ReferralTrack</h2>
+        <p>The story behind our AI-powered referral platform</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team collaboration">
+        </div>
+        <div class="about-text">
+          <h3>Our Mission</h3>
+          <p>At ReferralTrack, we believe in the power of word-of-mouth marketing. We're on a mission to help businesses harness the potential of their existing customers to drive growth through smart, AI-powered referral programs.</p>
+          
+          <h3>Who We Are</h3>
+          <p>Founded in 2021, ReferralTrack was born out of a simple observation: traditional customer acquisition methods were becoming increasingly expensive and less effective, while the most valuable customers often came through referrals.</p>
+          
+          <p>Our team of marketing experts, data scientists, and software engineers came together to build a platform that makes it easy for any business to create, manage, and optimize referral programs that actually convert.</p>
+          
+          <div class="about-cta">
+            <a href="/about" class="btn btn-primary">Learn More About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, Transparent Pricing</h2>
+        <p>Choose the plan that works best for your business</p>
+      </div>
+      
+      <div class="pricing-toggle">
+        <span class="toggle-option active">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="pricingToggle">
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-option">Yearly <span class="save-badge">Save 20%</span></span>
+      </div>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="pricing-amount">
+              <span class="currency">$</span>
+              <span class="amount monthly">49</span>
+              <span class="amount yearly" style="display: none;">39</span>
+              <span class="period">/month</span>
+            </div>
+            <p>Perfect for small businesses just getting started with referral marketing</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Up to 1,000 referral links</li>
+              <li><i class="fas fa-check"></i> Basic analytics dashboard</li>
+              <li><i class="fas fa-check"></i> Email support</li>
+              <li><i class="fas fa-check"></i> Standard reward options</li>
+              <li><i class="fas fa-check"></i> Basic AI campaign suggestions</li>
+              <li class="disabled"><i class="fas fa-times"></i> Custom branding</li>
+              <li class="disabled"><i class="fas fa-times"></i> API access</li>
+              <li class="disabled"><i class="fas fa-times"></i> Advanced fraud protection</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="register.html" class="btn btn-outline btn-lg">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Popular</div>
+          <div class="pricing-header">
+            <h3>Professional</h3>
+            <div class="pricing-amount">
+              <span class="currency">$</span>
+              <span class="amount monthly">99</span>
+              <span class="amount yearly" style="display: none;">79</span>
+              <span class="period">/month</span>
+            </div>
+            <p>Ideal for growing businesses looking to scale their referral programs</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Unlimited referral links</li>
+              <li><i class="fas fa-check"></i> Advanced analytics & reporting</li>
+              <li><i class="fas fa-check"></i> Priority email support</li>
+              <li><i class="fas fa-check"></i> Custom reward options</li>
+              <li><i class="fas fa-check"></i> Advanced AI campaign optimization</li>
+              <li><i class="fas fa-check"></i> Custom branding</li>
+              <li><i class="fas fa-check"></i> API access</li>
+              <li class="disabled"><i class="fas fa-times"></i> Advanced fraud protection</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="register.html" class="btn btn-primary btn-lg">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <div class="pricing-amount">
+              <span class="currency">$</span>
+              <span class="amount monthly">249</span>
+              <span class="amount yearly" style="display: none;">199</span>
+              <span class="period">/month</span>
+            </div>
+            <p>For large businesses with advanced referral marketing needs</p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Unlimited referral links</li>
+              <li><i class="fas fa-check"></i> Enterprise-grade analytics</li>
+              <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+              <li><i class="fas fa-check"></i> Custom integrations</li>
+              <li><i class="fas fa-check"></i> AI-powered strategy optimization</li>
+              <li><i class="fas fa-check"></i> White-label solution</li>
+              <li><i class="fas fa-check"></i> Full API access</li>
+              <li><i class="fas fa-check"></i> Advanced fraud protection</li>
+            </ul>
+          </div>
+          <div class="pricing-cta">
+            <a href="contact.html" class="btn btn-outline btn-lg">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to boost your customer acquisition?</h2>
+        <p>Join thousands of brands that use ReferralTrack to grow through customer referrals.</p>
+        <div class="cta-buttons">
+          <a href="register.html" class="btn btn-primary btn-lg">Get Started Free</a>
+          <a href="contact.html" class="btn btn-outline btn-lg">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>ReferralTrack</span>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Integrations</a>
+            <a href="#">API</a>
+          </div>
+          
+          <div class="footer-links-column">
+            <h4>Resources</h4>
+            <a href="#">Documentation</a>
+            <a href="#">Guides</a>
+            <a href="#">Blog</a>
+            <a href="#">Support</a>
+          </div>
+          
+          <div class="footer-links-column">
+            <h4>Company</h4>
+            <a href="about.html">About</a>
+            <a href="#">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Partners</a>
+          </div>
+          
+          <div class="footer-links-column">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Security</a>
+            <a href="#">GDPR</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2023 ReferralTrack. All rights reserved.
+        </div>
+        
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Chatbot -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">
+      <h3><i class="fa-solid fa-robot"></i> AI Assistant</h3>
+      <button class="close-chat" id="close-chat">
+        <i class="fa-solid fa-times"></i>
+      </button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message bot-message">
+        Hello! I'm your AI assistant. How can I help you today?
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" class="chat-input" id="chat-input" placeholder="Type your message...">
+      <button class="send-message" id="send-message">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="chat-trigger" id="chat-trigger">
+    <i class="fa-solid fa-message"></i>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const authButtons = document.querySelector('.auth-buttons');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      authButtons.classList.toggle('active');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Pricing toggle
+    const pricingToggle = document.getElementById('pricingToggle');
+    if (pricingToggle) {
+      pricingToggle.addEventListener('change', function() {
+        const monthlyAmounts = document.querySelectorAll('.amount.monthly');
+        const yearlyAmounts = document.querySelectorAll('.amount.yearly');
+        const toggleOptions = document.querySelectorAll('.toggle-option');
+        
+        if (this.checked) {
+          // Yearly pricing
+          monthlyAmounts.forEach(el => el.style.display = 'none');
+          yearlyAmounts.forEach(el => el.style.display = 'inline');
+          toggleOptions[0].classList.remove('active');
+          toggleOptions[1].classList.add('active');
+        } else {
+          // Monthly pricing
+          monthlyAmounts.forEach(el => el.style.display = 'inline');
+          yearlyAmounts.forEach(el => el.style.display = 'none');
+          toggleOptions[0].classList.add('active');
+          toggleOptions[1].classList.remove('active');
+        }
+      });
+    }
+    
+    // Chatbot functionality
+    const chatbot = document.getElementById('chatbot');
+    const chatTrigger = document.getElementById('chat-trigger');
+    const closeChatBtn = document.getElementById('close-chat');
+    const aiChatTrigger = document.getElementById('ai-chat-trigger');
+    const chatInput = document.getElementById('chat-input');
+    const sendMessageBtn = document.getElementById('send-message');
+    const chatMessages = document.getElementById('chat-messages');
+
+    function toggleChat() {
+      chatbot.classList.toggle('active');
+      if (chatbot.classList.contains('active')) {
+        chatInput.focus();
+      }
+    }
+
+    function addMessage(message, isUser = false) {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add('chat-message');
+      messageDiv.classList.add(isUser ? 'user-message' : 'bot-message');
+      messageDiv.textContent = message;
+      chatMessages.appendChild(messageDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    async function handleUserMessage() {
+      const message = chatInput.value.trim();
+      if (message) {
+        // Add user message to chat
+        addMessage(message, true);
+        chatInput.value = '';
+        
+        // Show typing indicator
+        const typingDiv = document.createElement('div');
+        typingDiv.classList.add('chat-message', 'bot-message', 'typing');
+        typingDiv.textContent = 'Typing...';
+        chatMessages.appendChild(typingDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        try {
+          // Call backend API
+          const response = await fetch('http://localhost:3001/api/chat', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message })
+          });
+
+          const data = await response.json();
+          
+          // Remove typing indicator
+          typingDiv.remove();
+
+          if (data.error) {
+            addMessage('Sorry, I encountered an error. Please try again.', false);
+          } else {
+            addMessage(data.response, false);
+          }
+        } catch (error) {
+          // Remove typing indicator
+          typingDiv.remove();
+          addMessage('Sorry, I encountered an error. Please try again.', false);
+        }
+      }
+    }
+
+    chatTrigger.addEventListener('click', toggleChat);
+    closeChatBtn.addEventListener('click', toggleChat);
+    aiChatTrigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleChat();
+    });
+
+    sendMessageBtn.addEventListener('click', handleUserMessage);
+    chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        handleUserMessage();
+      }
+    });
+  </script>
+</body>
+</html> 

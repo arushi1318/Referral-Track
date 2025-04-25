@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReferralTrack - About Us</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/home.css">
+  <style>
+    /* Additional styles for about page */
+    .about-hero {
+      padding: 160px 0 80px;
+      background-color: var(--gray-100);
+      background-image: linear-gradient(135deg, rgba(67, 97, 238, 0.05) 0%, rgba(76, 201, 240, 0.05) 100%);
+    }
+    
+    .about-hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: var(--gray-900);
+    }
+    
+    .about-hero p {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      margin-bottom: 30px;
+      max-width: 800px;
+    }
+    
+    .about-section {
+      padding: 80px 0;
+    }
+    
+    .about-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--gray-900);
+    }
+    
+    .about-section p {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      margin-bottom: 30px;
+      line-height: 1.8;
+    }
+    
+    .team-section {
+      background-color: var(--gray-100);
+      padding: 80px 0;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .team-member {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s ease;
+    }
+    
+    .team-member:hover {
+      transform: translateY(-10px);
+    }
+    
+    .team-member img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    
+    .team-member-info {
+      padding: 20px;
+    }
+    
+    .team-member-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .team-member-role {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      margin-bottom: 15px;
+    }
+    
+    .team-member-bio {
+      font-size: 0.95rem;
+      color: var(--gray-700);
+      line-height: 1.6;
+    }
+    
+    .social-links-small {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .social-links-small a {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--gray-200);
+      color: var(--gray-700);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links-small a:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>ReferralTrack</span>
+      </div>
+      
+      <div class="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </div>
+      
+      <div class="auth-buttons">
+        <a href="/login" class="btn btn-outline">Log In</a>
+        <a href="/register" class="btn btn-primary">Sign Up</a>
+      </div>
+      
+      <button class="mobile-menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Our Story</h1>
+      <p>At ReferralTrack, we believe in the power of word-of-mouth marketing. We're on a mission to help businesses harness the potential of their existing customers to drive growth through smart, AI-powered referral programs.</p>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>Founded in 2021, ReferralTrack was born out of a simple observation: traditional customer acquisition methods were becoming increasingly expensive and less effective, while the most valuable customers often came through referrals.</p>
+      <p>Our team of marketing experts, data scientists, and software engineers came together to build a platform that makes it easy for any business to create, manage, and optimize referral programs that actually convert.</p>
+      <p>Unlike other referral platforms, we use advanced AI to continuously analyze and improve your campaigns, ensuring you get the maximum return on investment. Our platform helps you identify your most influential customers, personalize incentives, and track every aspect of your referral program's performance.</p>
+    </div>
+  </section>
+  
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <p>We're a diverse group of professionals passionate about helping businesses grow through the power of referrals.</p>
+      
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Arushi Gupta">
+          <div class="team-member-info">
+            <div class="team-member-name">Arushi Gupta</div>
+            <div class="team-member-role">Founder & CEO</div>
+            <div class="team-member-bio">With over 15 years of experience in digital marketing, Arushi founded ReferralTrack after seeing the need for a more efficient referral marketing solution.</div>
+            <div class="social-links-small">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Sarah Chen">
+          <div class="team-member-info">
+            <div class="team-member-name">Sarah Chen</div>
+            <div class="team-member-role">Head of Product</div>
+            <div class="team-member-bio">Sarah leads our product team, bringing her expertise in AI and machine learning to create intelligent solutions for our clients.</div>
+            <div class="social-links-small">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Michael Rodriguez">
+          <div class="team-member-info">
+            <div class="team-member-name">Michael Rodriguez</div>
+            <div class="team-member-role">Lead Developer</div>
+            <div class="team-member-bio">Michael leads our engineering team, bringing his expertise in AI and machine learning to create intelligent solutions for our clients.</div>
+            <div class="social-links-small">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Emily Patel">
+          <div class="team-member-info">
+            <div class="team-member-name">Emily Patel</div>
+            <div class="team-member-role">Marketing Director</div>
+            <div class="team-member-bio">Emily leads our marketing team, bringing her expertise in digital marketing to create intelligent solutions for our clients.</div>
+            <div class="social-links-small">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to revolutionize your referral marketing?</h2>
+        <p>Join thousands of brands that use ReferralTrack to grow through customer referrals.</p>
+        <div class="cta-buttons">
+          <a href="/register" class="btn btn-primary btn-lg">Get Started Free</a>
+          <a href="/contact" class="btn btn-outline btn-lg">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>ReferralTrack</span>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#">Integrations</a>
+            <a href="#">API</a>
+          </div>
+          
+          <div class="footer-links-column">
+            <h4>Resources</h4>
+            <a href="#">Documentation</a>
+            <a href="#">Guides</a>
+            <a href="#">Blog</a>
+            <a href="#">Support</a>
+          </div>
+          
+          <div class="footer-links-column">
+            <h4>Company</h4>
+            <a href="/about">About</a>
+            <a href="#">Careers</a>
+            <a href="/contact">Contact</a>
+            <a href="#">Partners</a>
+          </div>
+          
+          <div class="footer-links-column">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Security</a>
+            <a href="#">GDPR</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2023 ReferralTrack. All rights reserved.
+        </div>
+        
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReferralTrack - Messages</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/messages.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <a href="home.html" class="logo-link">
+          <div class="logo">
+            <i class="fas fa-chart-line"></i> ReferralTrack
+          </div>
+        </a>
+      </div>
+      
+      <nav class="menu">
+        <div class="menu-category">Main</div>
+        <a href="dashboard.html" class="menu-item">
+          <i class="fas fa-home menu-icon"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="analytics.html" class="menu-item">
+          <i class="fas fa-chart-bar menu-icon"></i>
+          <span>Analytics</span>
+        </a>
+        <a href="referrals.html" class="menu-item">
+          <i class="fas fa-user-friends menu-icon"></i>
+          <span>Referrals</span>
+        </a>
+        <a href="campaigns.html" class="menu-item">
+          <i class="fas fa-tasks menu-icon"></i>
+          <span>Campaigns</span>
+        </a>
+        
+        <div class="menu-category">Tools</div>
+        <a href="messages.html" class="menu-item active">
+          <i class="fas fa-comment menu-icon"></i>
+          <span>Messages</span>
+        </a>
+        <a href="email.html" class="menu-item">
+          <i class="fas fa-envelope menu-icon"></i>
+          <span>Email</span>
+        </a>
+        <a href="rewards.html" class="menu-item">
+          <i class="fas fa-gift menu-icon"></i>
+          <span>Rewards</span>
+        </a>
+        
+        <div class="menu-category">Settings</div>
+        <a href="profile.html" class="menu-item">
+          <i class="fas fa-user menu-icon"></i>
+          <span>Profile</span>
+        </a>
+        <a href="settings.html" class="menu-item">
+          <i class="fas fa-cog menu-icon"></i>
+          <span>Settings</span>
+        </a>
+        <a href="help.html" class="menu-item">
+          <i class="fas fa-question-circle menu-icon"></i>
+          <span>Help</span>
+        </a>
+      </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <h1 class="page-title">Messages</h1>
+          <button class="new-message-btn">
+            <i class="fas fa-plus"></i>
+            New Message
+          </button>
+        </div>
+        <div class="header-right">
+          <div class="header-actions">
+            <button id="themeToggle" class="header-icon">
+              <i class="fas fa-sun" id="themeIcon"></i>
+            </button>
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search messages...">
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Messages Content -->
+      <div class="messages-container">
+        <div class="messages-sidebar">
+          <div class="messages-list">
+            <div class="message-item active">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Arushi Gupta">
+              <div class="message-info">
+                <div class="message-header">
+                  <span class="sender-name">Arushi Gupta</span>
+                  <span class="message-time">2:30 PM</span>
+                </div>
+                <div class="message-preview">Thanks for the referral program info...</div>
+              </div>
+            </div>
+            <div class="message-item">
+              <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Sarah Johnson">
+              <div class="message-info">
+                <div class="message-header">
+                  <span class="sender-name">Sarah Johnson</span>
+                  <span class="message-time">11:45 AM</span>
+                </div>
+                <div class="message-preview">I'd like to join the summer campaign...</div>
+              </div>
+            </div>
+            <div class="message-item">
+              <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Michael Brown">
+              <div class="message-info">
+                <div class="message-header">
+                  <span class="sender-name">Michael Brown</span>
+                  <span class="message-time">Yesterday</span>
+                </div>
+                <div class="message-preview">How do I track my referrals?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-content">
+          <div class="chat-header">
+            <div class="chat-user">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Arushi Gupta">
+              <div class="chat-user-info">
+                <span class="chat-user-name">Arushi Gupta</span>
+                <span class="chat-user-status">Online</span>
+              </div>
+            </div>
+            <div class="chat-actions">
+              <button class="chat-action-btn"><i class="fas fa-phone"></i></button>
+              <button class="chat-action-btn"><i class="fas fa-video"></i></button>
+              <button class="chat-action-btn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+          </div>
+
+          <div class="chat-messages">
+            <div class="message received">
+              <div class="message-bubble">
+                Hi, I'm interested in learning more about your referral program.
+              </div>
+              <span class="message-time">2:15 PM</span>
+            </div>
+            <div class="message sent">
+              <div class="message-bubble">
+                Of course! I'd be happy to help. Our referral program offers rewards for both the referrer and the referred customer.
+              </div>
+              <span class="message-time">2:20 PM</span>
+            </div>
+            <div class="message received">
+              <div class="message-bubble">
+                Thanks for the referral program info. That sounds great!
+              </div>
+              <span class="message-time">2:30 PM</span>
+            </div>
+          </div>
+
+          <div class="chat-input">
+            <button class="attachment-btn"><i class="fas fa-paperclip"></i></button>
+            <input type="text" placeholder="Type your message...">
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Custom JS -->
+  <script src="js/messages.js"></script>
+</body>
+</html> 

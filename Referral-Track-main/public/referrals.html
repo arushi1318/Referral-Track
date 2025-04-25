@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReferralTrack - Referrals</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/referrals.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <a href="home.html" class="logo-link">
+          <div class="logo">
+            <i class="fas fa-chart-line"></i> ReferralTrack
+          </div>
+        </a>
+      </div>
+      
+      <nav class="menu">
+        <div class="menu-category">Main</div>
+        <a href="dashboard.html" class="menu-item">
+          <i class="fas fa-home menu-icon"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="analytics.html" class="menu-item">
+          <i class="fas fa-chart-bar menu-icon"></i>
+          <span>Analytics</span>
+        </a>
+        <a href="referrals.html" class="menu-item active">
+          <i class="fas fa-user-friends menu-icon"></i>
+          <span>Referrals</span>
+        </a>
+        <a href="campaigns.html" class="menu-item">
+          <i class="fas fa-tasks menu-icon"></i>
+          <span>Campaigns</span>
+        </a>
+        
+        <div class="menu-category">Tools</div>
+        <a href="messages.html" class="menu-item">
+          <i class="fas fa-comment menu-icon"></i>
+          <span>Messages</span>
+        </a>
+        <a href="email.html" class="menu-item">
+          <i class="fas fa-envelope menu-icon"></i>
+          <span>Email</span>
+        </a>
+        <a href="rewards.html" class="menu-item">
+          <i class="fas fa-gift menu-icon"></i>
+          <span>Rewards</span>
+        </a>
+        
+        <div class="menu-category">Settings</div>
+        <a href="profile.html" class="menu-item">
+          <i class="fas fa-user menu-icon"></i>
+          <span>Profile</span>
+        </a>
+        <a href="settings.html" class="menu-item">
+          <i class="fas fa-cog menu-icon"></i>
+          <span>Settings</span>
+        </a>
+        <a href="help.html" class="menu-item">
+          <i class="fas fa-question-circle menu-icon"></i>
+          <span>Help</span>
+        </a>
+      </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <h1 class="page-title">Referrals</h1>
+          <button class="new-referral-btn">
+            <i class="fas fa-plus"></i>
+            Add New Referral
+          </button>
+        </div>
+        <div class="header-right">
+          <div class="header-actions">
+            <button id="themeToggle" class="header-icon">
+              <i class="fas fa-sun" id="themeIcon"></i>
+            </button>
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search referrals...">
+            </div>
+            <div class="filter-dropdown">
+              <button class="filter-btn">
+                <i class="fas fa-filter"></i>
+                Filter
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Referrals Content -->
+      <div class="referrals-container">
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value">2,846</div>
+              <div class="stat-label">Total Referrals</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value">1,523</div>
+              <div class="stat-label">Converted</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value">324</div>
+              <div class="stat-label">Pending</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value">$45,289</div>
+              <div class="stat-label">Revenue Generated</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Referrals Table -->
+        <div class="referrals-table-container">
+          <table class="referrals-table">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" id="selectAll">
+                </th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Source</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Revenue</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>
+                  <div class="referral-name">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Arushi Gupta">
+                    <span>Arushi Gupta</span>
+                  </div>
+                </td>
+                <td>john.smith@example.com</td>
+                <td>Direct Link</td>
+                <td><span class="status-badge converted">Converted</span></td>
+                <td>Apr 23, 2025</td>
+                <td>$250</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                    <button class="action-btn"><i class="fas fa-envelope"></i></button>
+                    <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>
+                  <div class="referral-name">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Sarah Johnson">
+                    <span>Sarah Johnson</span>
+                  </div>
+                </td>
+                <td>sarah.j@example.com</td>
+                <td>Email Campaign</td>
+                <td><span class="status-badge pending">Pending</span></td>
+                <td>Apr 22, 2025</td>
+                <td>$0</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                    <button class="action-btn"><i class="fas fa-envelope"></i></button>
+                    <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>
+                  <div class="referral-name">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Michael Brown">
+                    <span>Michael Brown</span>
+                  </div>
+                </td>
+                <td>michael.b@example.com</td>
+                <td>Social Media</td>
+                <td><span class="status-badge in-progress">In Progress</span></td>
+                <td>Apr 22, 2025</td>
+                <td>$0</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="action-btn"><i class="fas fa-edit"></i></button>
+                    <button class="action-btn"><i class="fas fa-envelope"></i></button>
+                    <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Table Pagination -->
+          <div class="table-footer">
+            <div class="table-info">Showing 1-3 of 2,846 referrals</div>
+            <div class="pagination">
+              <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <span class="pagination-ellipsis">...</span>
+              <button class="pagination-btn">95</button>
+              <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Custom JS -->
+  <script src="js/referrals.js"></script>
+</body>
+</html> 

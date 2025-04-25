@@ -1,0 +1,244 @@
+/* Email Container */
+.email-container {
+  display: flex;
+  height: calc(100vh - 80px);
+  background: var(--surface-color);
+  border-radius: 12px;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+/* Compose Button */
+.compose-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.compose-btn:hover {
+  background: var(--primary-color-dark);
+}
+
+/* Email Sidebar */
+.email-sidebar {
+  width: 240px;
+  background: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.email-folders {
+  margin-bottom: 2rem;
+}
+
+.folder-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.folder-item:hover {
+  background: var(--hover-bg);
+}
+
+.folder-item.active {
+  background: var(--primary-color-light);
+  color: var(--primary-color);
+}
+
+.badge {
+  margin-left: auto;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+.email-labels h3 {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  padding: 0 0.75rem;
+}
+
+.label-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.label-item:hover {
+  background: var(--hover-bg);
+}
+
+.label-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Email List */
+.email-list {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--surface-color);
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.2s;
+}
+
+.email-item:hover {
+  background: var(--hover-bg);
+}
+
+.email-item.unread {
+  background: var(--surface-color);
+  font-weight: 600;
+}
+
+.email-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.email-star {
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.email-star .fas {
+  color: var(--warning-color);
+}
+
+.email-sender {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 200px;
+}
+
+.email-sender img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.email-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.email-subject {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.email-preview {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.email-time {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.email-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.email-actions button {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.email-actions button:hover {
+  background: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .email-sender {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-container {
+    flex-direction: column;
+  }
+
+  .email-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .email-folders {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+
+  .folder-item {
+    white-space: nowrap;
+  }
+
+  .email-labels {
+    display: none;
+  }
+
+  .email-sender {
+    width: auto;
+  }
+
+  .email-preview {
+    display: none;
+  }
+} 

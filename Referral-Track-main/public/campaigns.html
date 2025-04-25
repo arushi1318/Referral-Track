@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReferralTrack - Campaigns</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/campaigns.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <a href="home.html" class="logo-link">
+          <div class="logo">
+            <i class="fas fa-chart-line"></i> ReferralTrack
+          </div>
+        </a>
+      </div>
+      
+      <nav class="menu">
+        <div class="menu-category">Main</div>
+        <a href="dashboard.html" class="menu-item">
+          <i class="fas fa-home menu-icon"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="analytics.html" class="menu-item">
+          <i class="fas fa-chart-bar menu-icon"></i>
+          <span>Analytics</span>
+        </a>
+        <a href="referrals.html" class="menu-item">
+          <i class="fas fa-user-friends menu-icon"></i>
+          <span>Referrals</span>
+        </a>
+        <a href="campaigns.html" class="menu-item active">
+          <i class="fas fa-tasks menu-icon"></i>
+          <span>Campaigns</span>
+        </a>
+        
+        <div class="menu-category">Tools</div>
+        <a href="messages.html" class="menu-item">
+          <i class="fas fa-comment menu-icon"></i>
+          <span>Messages</span>
+        </a>
+        <a href="email.html" class="menu-item">
+          <i class="fas fa-envelope menu-icon"></i>
+          <span>Email</span>
+        </a>
+        <a href="rewards.html" class="menu-item">
+          <i class="fas fa-gift menu-icon"></i>
+          <span>Rewards</span>
+        </a>
+        
+        <div class="menu-category">Settings</div>
+        <a href="profile.html" class="menu-item">
+          <i class="fas fa-user menu-icon"></i>
+          <span>Profile</span>
+        </a>
+        <a href="settings.html" class="menu-item">
+          <i class="fas fa-cog menu-icon"></i>
+          <span>Settings</span>
+        </a>
+        <a href="help.html" class="menu-item">
+          <i class="fas fa-question-circle menu-icon"></i>
+          <span>Help</span>
+        </a>
+      </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <h1 class="page-title">Campaigns</h1>
+          <button class="new-campaign-btn">
+            <i class="fas fa-plus"></i>
+            Create Campaign
+          </button>
+        </div>
+        <div class="header-right">
+          <div class="header-actions">
+            <button id="themeToggle" class="header-icon">
+              <i class="fas fa-sun" id="themeIcon"></i>
+            </button>
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search campaigns...">
+            </div>
+            <div class="view-toggle">
+              <button class="view-btn active" data-view="grid">
+                <i class="fas fa-th-large"></i>
+              </button>
+              <button class="view-btn" data-view="list">
+                <i class="fas fa-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Campaigns Content -->
+      <div class="campaigns-container">
+        <!-- Campaign Grid -->
+        <div class="campaign-grid">
+          <!-- Active Campaign Card -->
+          <div class="campaign-card active">
+            <div class="campaign-header">
+              <div class="campaign-status">
+                <span class="status-badge active">Active</span>
+                <span class="campaign-date">Started Apr 15, 2025</span>
+              </div>
+              <div class="campaign-actions">
+                <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+            </div>
+            <div class="campaign-body">
+              <h3>Summer Sale Referral</h3>
+              <p>Special discounts for referred customers during summer sale.</p>
+              <div class="campaign-metrics">
+                <div class="metric">
+                  <span class="metric-value">1,245</span>
+                  <span class="metric-label">Referrals</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">32.4%</span>
+                  <span class="metric-label">Conversion</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">$18,675</span>
+                  <span class="metric-label">Revenue</span>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-footer">
+              <div class="reward-info">
+                <i class="fas fa-gift"></i>
+                <span>$50 reward per conversion</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+
+          <!-- Scheduled Campaign Card -->
+          <div class="campaign-card scheduled">
+            <div class="campaign-header">
+              <div class="campaign-status">
+                <span class="status-badge scheduled">Scheduled</span>
+                <span class="campaign-date">Starts May 1, 2025</span>
+              </div>
+              <div class="campaign-actions">
+                <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+            </div>
+            <div class="campaign-body">
+              <h3>Spring Collection Launch</h3>
+              <p>Early access and exclusive discounts for referred customers.</p>
+              <div class="campaign-setup">
+                <div class="setup-progress">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                  </div>
+                  <span>Setup Progress: 75%</span>
+                </div>
+                <button class="complete-setup-btn">Complete Setup</button>
+              </div>
+            </div>
+            <div class="campaign-footer">
+              <div class="reward-info">
+                <i class="fas fa-gift"></i>
+                <span>20% discount for referrals</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+
+          <!-- Draft Campaign Card -->
+          <div class="campaign-card draft">
+            <div class="campaign-header">
+              <div class="campaign-status">
+                <span class="status-badge draft">Draft</span>
+                <span class="campaign-date">Created Apr 20, 2025</span>
+              </div>
+              <div class="campaign-actions">
+                <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+            </div>
+            <div class="campaign-body">
+              <h3>Back to School</h3>
+              <p>Special referral program for the back-to-school season.</p>
+              <div class="campaign-setup">
+                <div class="setup-progress">
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 25%"></div>
+                  </div>
+                  <span>Setup Progress: 25%</span>
+                </div>
+                <button class="continue-setup-btn">Continue Setup</button>
+              </div>
+            </div>
+            <div class="campaign-footer">
+              <div class="reward-info">
+                <i class="fas fa-gift"></i>
+                <span>Reward not set</span>
+              </div>
+              <button class="view-details-btn">View Details</button>
+            </div>
+          </div>
+
+          <!-- Completed Campaign Card -->
+          <div class="campaign-card completed">
+            <div class="campaign-header">
+              <div class="campaign-status">
+                <span class="status-badge completed">Completed</span>
+                <span class="campaign-date">Ended Apr 10, 2025</span>
+              </div>
+              <div class="campaign-actions">
+                <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+              </div>
+            </div>
+            <div class="campaign-body">
+              <h3>Easter Special</h3>
+              <p>Easter holiday referral campaign with special rewards.</p>
+              <div class="campaign-metrics">
+                <div class="metric">
+                  <span class="metric-value">856</span>
+                  <span class="metric-label">Referrals</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">28.9%</span>
+                  <span class="metric-label">Conversion</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">$12,438</span>
+                  <span class="metric-label">Revenue</span>
+                </div>
+              </div>
+            </div>
+            <div class="campaign-footer">
+              <div class="reward-info">
+                <i class="fas fa-gift"></i>
+                <span>$30 reward per conversion</span>
+              </div>
+              <button class="view-details-btn">View Report</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Custom JS -->
+  <script src="js/campaigns.js"></script>
+</body>
+</html> 
