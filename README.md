@@ -20,9 +20,10 @@ ReferralTrack is a modern, AI-powered referral management platform designed to h
 ### Campaign Management
 
 <img src="images/Screenshot 2025-04-25 225734.png" alt="ReferralTrack Campaign Details" width="800"/>
+<img src="images/Screenshot 2025-04-25 225759.png" alt="ReferralTrack User Management" width="800"/>
 
 ### User Management
-<img src="images/Screenshot 2025-04-25 225759.png" alt="ReferralTrack User Management" width="800"/>
+
 <img src="images/Screenshot 2025-04-25 225818.png" alt="ReferralTrack User Profile" width="800"/>
 
 ## 🌟 Features
